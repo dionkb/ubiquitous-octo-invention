@@ -11,50 +11,50 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-  # ${data.title}
+// function generateMarkdown(data) {
+//   return `
+//   # ${data.title}
 
-  ${data.summary}
+//   ${data.summary}
 
-  ## Description
+//   ## Description
 
-  ${data.fullDescription}
+//   ${data.fullDescription}
 
-  Screenshot of final output: (***Don't forget to add me!***)
+//   Screenshot of final output: (***Don't forget to add me!***)
 
 
-  Link to the repository (if needed)
-  ${data.includeRepository}
+//   Link to the repository (if needed)
+//   ${data.includeRepository}
 
-  ## Getting Started
+//   ## Getting Started
 
-  ### Dependencies
-  ${data.dependenciesCheck}
-  ${data.listDependencies}
-  ${data.moreDependencies}
+//   ### Dependencies
+//   ${data.dependenciesCheck}
+//   ${data.listDependencies}
+//   ${data.moreDependencies}
 
-  ### Installation
-  ${data.installation}
+//   ### Installation
+//   ${data.installation}
 
-  ### Executing Program
-  Link to the deployed application (if applicable)
-  ${data.includeDeployedURL}
+//   ### Executing Program
+//   Link to the deployed application (if applicable)
+//   ${data.includeDeployedURL}
 
-  ## Authors
-  ${data.authors}
-  ${data.additionalAuthors}
+//   ## Authors
+//   ${data.authors}
+//   ${data.additionalAuthors}
 
-  ##License  
-  ${data.genericLicense}
-  ${data.uniqueLicense}
+//   ##License  
+//   ${data.genericLicense}
+//   ${data.uniqueLicense}
 
-  ## Acknowledgements
-  ${data.acknowledgements}
-  ${data.listAck}
-  ${data.moreAck}
-  `
-}
-generateMarkdown();
-
-module.exports = generateMarkdown;
+//   ## Acknowledgements
+//   ${data.acknowledgements}
+//   ${data.listAck}
+//   ${data.moreAck}
+//   `
+// }
+// generateMarkdown();
+// 
+// module.exports = generateMarkdown;
