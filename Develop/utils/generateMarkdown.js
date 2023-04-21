@@ -43,6 +43,11 @@ function generateMarkdown(data) {
   ## Authors
   ${data.authors}
 
+  ### Questions
+  For any questions, or to contribute to the project, please reach out to me at:
+  GitHub profile: github.com/${data.githubUser}
+  Email: ${data.email}
+
   ## License  
   ${data.licenseDetails}
 

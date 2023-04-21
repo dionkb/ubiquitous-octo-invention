@@ -153,6 +153,34 @@ const questions = [
         }
     },
     {
+        name: "githubUser",
+        message: "Provide your Github username",
+        type: "input",
+        default: "dionkb",
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('You must enter your Github username');
+                return false;
+            }
+        }
+    },
+    {
+        name: "email",
+        message: "Provide your email address",
+        type: "input",
+        default: "dionkbaskara@gmail.com",
+        validate: emailInput => {
+            if (emailInput) {
+                return true;
+            } else {
+                console.log('You must enter your email address');
+                return false;
+            }
+        }
+    },
+    {
         name: "licenseDetails",
         message: "Provide license details:",
         type: "input",
