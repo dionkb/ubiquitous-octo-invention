@@ -99,6 +99,20 @@ const questions = [
         }
     },
     {
+        name: "executionNotes",
+        message: "Enter instructions on how to execute the application:",
+        type: "input",
+        default: "N/A",
+        validate: execInput => {
+            if (execInput) {
+                return true;
+            } else {
+                console.log('You must enter execution instructions');
+                return false;
+            }
+        }
+    },
+    {
         name: "includeDepoloyedURL",
         message: "Include space for deployed application url?",
         type: "confirm",
