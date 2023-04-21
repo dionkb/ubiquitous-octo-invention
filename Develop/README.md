@@ -1,33 +1,40 @@
-# Week 9 - NodeJS Final Challenge
+# d
 
-  This is a README generator using NodeJS Inquirer
+  D
 
   ## Description
 
-  The user can run this app in the terminal by using "node index.js" in the repository. The user will answer a series of prompts that will then be used to populate a README file that is newly generated. There are several questions that alllow the user to customize the README based on their needs.
+  D
 
   Screenshot of final output: (***Don't forget to add me!***)
 
 
   Link to the repository (if needed)
-  https://github.com/dionkb/ubiquitous-octo-invention.git
+  d
 
   ## Getting Started
 
   ### Dependencies
-  Inquirer 8.2.4
+  N/A
 
   ### Installation
   N/A
 
   ### Executing Program
+  N/A
+  
   Link to the deployed application (if applicable)
   undefined
 
   ## Authors
   Dion Baskara
 
-  ##License  
+  ### Questions
+  For any questions, or to contribute to the project, please reach out to me at:
+  GitHub profile: github.com/dionkb
+  Email: dionkbaskara@gmail.com
+
+  ## License  
   See the LICENSE.md file for details
 
   ## Acknowledgements
