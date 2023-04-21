@@ -35,13 +35,15 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ### Executing Program
+  ${data.executionNotes}
+  
   Link to the deployed application (if applicable)
-  ${data.includeDeployedURL}
+  ${data.deployedAppURL}
 
   ## Authors
   ${data.authors}
 
-  ##License  
+  ## License  
   ${data.licenseDetails}
 
   ## Acknowledgements
