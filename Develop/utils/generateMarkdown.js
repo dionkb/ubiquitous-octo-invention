@@ -30,9 +30,7 @@ function generateMarkdown(data) {
   ## Getting Started
 
   ### Dependencies
-  ${data.dependenciesCheck}
   ${data.listDependencies}
-  ${data.moreDependencies}
 
   ### Installation
   ${data.installation}
@@ -43,16 +41,12 @@ function generateMarkdown(data) {
 
   ## Authors
   ${data.authors}
-  ${data.additionalAuthors}
 
   ##License  
-  ${data.genericLicense}
-  ${data.uniqueLicense}
+  ${data.licenseDetails}
 
   ## Acknowledgements
   ${data.acknowledgements}
-  ${data.listAck}
-  ${data.moreAck}
   `
 }
 
