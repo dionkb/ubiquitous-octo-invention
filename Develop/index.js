@@ -50,13 +50,8 @@ const questions = [
         type: "confirm",
     },
     {
-        name: "dependenciesCheck",
-        message: "List a dependency?",
-        type: "confirm",
-    },
-    {
         name: "listDependencies",
-        message: "List a dependency:",
+        message: "List any dependencies, separating each with a comma:",
         type: "input",
         validate: dependInput => {
             if (dependInput) {
@@ -66,11 +61,6 @@ const questions = [
                 return false;
             }
         }
-    },
-    {
-        name: "moreDependencies",
-        message: "List another dependency?",
-        type: "confirm",
     },
     {
         name: "installation",
@@ -92,7 +82,7 @@ const questions = [
     },
     {
         name: "authors",
-        message: "Provide an author:",
+        message: "Provide the author(s), separateing each author with a comma",
         type: "input",
         validate: authorInput => {
             if (authorInput) {
@@ -104,17 +94,7 @@ const questions = [
         }
     },
     {
-        name: "additionalAuthors",
-        message: "Provide additional authors?",
-        type: "confirm",
-    },
-    {
-        name: "genericLicense",
-    message: "Use generic 'See the LICENSE.md file for details'?",
-    type: "confirm",
-    },
-    {
-        name: "uniqueLicense",
+        name: "licenseDetails",
         message: "Provide license details:",
         type: "input",
         validate: licenseInput => {
@@ -128,12 +108,7 @@ const questions = [
     },
     {
         name: "acknowledgements",
-        message: "Do you need to list any acknowledgements?",
-        type: "confirm",
-    },
-    {
-        name: "listAck",
-        message: "Acknowledgement:",
+        message: "Acknowledgements:",
         type: "input",
         validate: acknoInput => {
             if (acknoInput) {
@@ -144,11 +119,6 @@ const questions = [
             }
         }
     },
-    {
-        name: "moreAck",
-        message: "Any more acknowledgements?",
-        type: "confirm",
-    }
 ];
 
 // // TODO: Create a function to write README file
