@@ -22,6 +22,14 @@ function generateMarkdown(data) {
 
   Screenshot of final output: (***Don't forget to add me!***)
 
+  ## Table of Contents
+  * [Dependencies](#dependencies)
+  * [Installation](#installation)
+  * [Executing Program](#execution)
+  * [Authors](#authors)
+  * [Questions](#questions)
+  * [License](#license)
+  * [Acknowledgements](#acknowledgements)
 
   Link to the repository (if needed)
   ${data.repositoryURL}
@@ -34,24 +42,31 @@ function generateMarkdown(data) {
   ### Installation
   ${data.installation}
 
+  ## Usage
+
   ### Executing Program
   ${data.executionNotes}
   
   Link to the deployed application (if applicable)
   ${data.deployedAppURL}
 
-  ## Authors
+  ## Additional Information
+
+  ### Authors
   ${data.authors}
 
   ### Questions
-  For any questions, or to contribute to the project, please reach out to me at:
-  GitHub profile: github.com/${data.githubUser}
+  For any questions, please reach out to me at:
   Email: ${data.email}
 
-  ## License  
+  ### Contributing
+  To help contribute to the project, reach out to me on Github, or open an issue there
+  GitHub profile: github.com/${data.githubUser}
+
+  ### License  
   ${data.licenseDetails}
 
-  ## Acknowledgements
+  ### Acknowledgements
   ${data.acknowledgements}
   `
 }
