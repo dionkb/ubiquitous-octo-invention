@@ -113,7 +113,7 @@ const questions = [
         }
     },
     {
-        name: "includeDepoloyedURL",
+        name: "includeDeployedURL",
         message: "Include space for deployed application url?",
         type: "confirm",
     },
