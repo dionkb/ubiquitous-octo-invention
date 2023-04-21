@@ -50,9 +50,31 @@ const questions = [
         type: "confirm",
     },
     {
+        name: "repositoryURL",
+        message: "Provide the URL to the repository:",
+        type: "input",
+        when: ({ includeRepository }) => {
+            if (includeRepository) {
+                return true;
+            } 
+            else {
+                return false;
+            }
+        },
+        validate: repositoryURL => {
+            if (repositoryURL) {
+                return true;
+            } else {
+                console.log('You must enter the repository URL');
+                return false;
+            }
+        }
+    },
+    {
         name: "listDependencies",
         message: "List any dependencies, separating each with a comma:",
         type: "input",
+        default: "N/A",
         validate: dependInput => {
             if (dependInput) {
                 return true;
@@ -66,6 +88,7 @@ const questions = [
         name: "installation",
         message: "Installation instructions:",
         type: "input",
+        default: "N/A",
         validate: installInput => {
             if (installInput) {
                 return true;
@@ -81,9 +104,31 @@ const questions = [
         type: "confirm",
     },
     {
-        name: "authors",
-        message: "Provide the author(s), separateing each author with a comma",
+        name: "deployedAppURL",
+        message: "Provide the URL to the deployed application:",
         type: "input",
+        when: ({ includeDeployedURL }) => {
+            if (includeDeployedURL) {
+                return true;
+            } 
+            else {
+                return false;
+            }
+        },
+        validate: deployedAppURL => {
+            if (deployedAppURL) {
+                return true;
+            } else {
+                console.log('You must enter the URL for the deployed application');
+                return false;
+            }
+        }
+    },
+    {
+        name: "authors",
+        message: "Provide the author(s), separating each author with a comma",
+        type: "input",
+        default: "Dion Baskara",
         validate: authorInput => {
             if (authorInput) {
                 return true;
@@ -97,6 +142,7 @@ const questions = [
         name: "licenseDetails",
         message: "Provide license details:",
         type: "input",
+        default: "See the LICENSE.md file for details",
         validate: licenseInput => {
             if (licenseInput) {
                 return true;
@@ -110,6 +156,7 @@ const questions = [
         name: "acknowledgements",
         message: "Acknowledgements:",
         type: "input",
+        default: "N/A",
         validate: acknoInput => {
             if (acknoInput) {
                 return true;
