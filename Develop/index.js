@@ -22,7 +22,7 @@ const questions = [
     },
     {
     name: "includeRepository",
-    message: "Include space for repository url?", // Y or N
+    message: "Include space for repository url?",
     type: "confirm",
     },
     {
@@ -88,11 +88,11 @@ const questions = [
 ];
 
 // // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data, (err) =>
-//         err ? console.error(err) : console.log('README succesfully created')
-//     );
-// }
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.error(err) : console.log('README succesfully created')
+    );
+}
 
 // // TODO: Create a function to initialize app
 function init() {
@@ -104,6 +104,7 @@ init()
 .then(answers => {
     console.log(answers);
     return generateMarkdown(answers);
+})
+.then(returnedMarkdown => {
+    writeToFile("README.md", returnedMarkdown);
 });
-
-// writeToFile("README.md", (generateMarkdown(userAnswers)));
