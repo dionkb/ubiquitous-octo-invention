@@ -6,59 +6,107 @@ const fs = require('fs');
 // // TODO: Create an array of questions for user input
 const questions = [
     {
-    name: "title",
-    message: "Enter project title:",
-    type: "input",
+        name: "title",
+        message: "Enter project title:",
+        type: "input",
+        validate: titleInput => {
+            if (titleInput) {
+                return true;
+            } else {
+                console.log('You must enter a title');
+                return false;
+            }
+        }
     },
     {
-    name: "summary",
-    message: "Enter a short summary:",
-    type: "input",
+        name: "summary",
+        message: "Enter a short summary:",
+        type: "input",
+        validate: summaryInput => {
+            if (summaryInput) {
+                return true;
+            } else {
+                console.log('You must enter a short summary');
+                return false;
+            }
+        }
     },
     {
-    name: "fullDescription",
-    message: "In-depth description of features:",
-    type: "input",
+        name: "fullDescription",
+        message: "In-depth description of features:",
+        type: "input",
+        validate: descInput => {
+            if (descInput) {
+                return true;
+            } else {
+                console.log('You must enter a description');
+                return false;
+            }
+        }
     },
     {
-    name: "includeRepository",
-    message: "Include space for repository url?",
-    type: "confirm",
+        name: "includeRepository",
+        message: "Include space for repository url?",
+        type: "confirm",
     },
     {
-    name: "dependenciesCheck",
-    message: "List a dependency?",
-    type: "confirm",
+        name: "dependenciesCheck",
+        message: "List a dependency?",
+        type: "confirm",
     },
     {
-    name: "listDependencies",
-    message: "List a dependency:",
-    type: "input",
+        name: "listDependencies",
+        message: "List a dependency:",
+        type: "input",
+        validate: dependInput => {
+            if (dependInput) {
+                return true;
+            } else {
+                console.log('You must enter a dependency');
+                return false;
+            }
+        }
     },
     {
-    name: "moreDependencies",
-    message: "List another dependency?",
-    type: "confirm",
+        name: "moreDependencies",
+        message: "List another dependency?",
+        type: "confirm",
     },
     {
-    name: "installation",
-    message: "Installation instructions:",
-    type: "input",
+        name: "installation",
+        message: "Installation instructions:",
+        type: "input",
+        validate: installInput => {
+            if (installInput) {
+                return true;
+            } else {
+                console.log('You must enter a installation instructions');
+                return false;
+            }
+        }
     },
     {
-    name: "includeDepoloyedURL",
-    message: "Include space for deployed application url?",
-    type: "confirm",
+        name: "includeDepoloyedURL",
+        message: "Include space for deployed application url?",
+        type: "confirm",
     },
     {
-    name: "authors",
-    message: "Provide an author:",
-    type: "string",
+        name: "authors",
+        message: "Provide an author:",
+        type: "input",
+        validate: authorInput => {
+            if (authorInput) {
+                return true;
+            } else {
+                console.log('You must enter an author');
+                return false;
+            }
+        }
     },
     {
         name: "additionalAuthors",
-    message: "Provide additional authors?",
-    type: "confirm",
+        message: "Provide additional authors?",
+        type: "confirm",
     },
     {
         name: "genericLicense",
@@ -67,23 +115,39 @@ const questions = [
     },
     {
         name: "uniqueLicense",
-    message: "Provide license details:",
-    type: "string",
+        message: "Provide license details:",
+        type: "input",
+        validate: licenseInput => {
+            if (licenseInput) {
+                return true;
+            } else {
+                console.log('You must enter license information');
+                return false;
+            }
+        }
     },
     {
         name: "acknowledgements",
-    message: "Do you need to list any acknowledgements?",
-    type: "confirm",
+        message: "Do you need to list any acknowledgements?",
+        type: "confirm",
     },
     {
         name: "listAck",
-    message: "Acknowledgement:",
-    type: "string",
+        message: "Acknowledgement:",
+        type: "input",
+        validate: acknoInput => {
+            if (acknoInput) {
+                return true;
+            } else {
+                console.log('You must enter acknowledgements');
+                return false;
+            }
+        }
     },
     {
         name: "moreAck",
-    message: "Any more acknowledgements?",
-    type: "confirm",
+        message: "Any more acknowledgements?",
+        type: "confirm",
     }
 ];
 
