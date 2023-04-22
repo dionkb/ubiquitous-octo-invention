@@ -48,6 +48,35 @@ const questions = [
             }
         }
     },
+    // Asking if you would like to include a screenshot or gif of the application
+    {
+        name: "includeScreenshot",
+        message: "Include a screenshot or gif of the application?",
+        type: "confirm",
+    },
+    // Obtaining a relative pathway to the screenshot/gif of the application
+    // if the includeScreenshot input = Y
+    {
+        name: "screenshotPath",
+        message: "Please provide the relative path (from the root of the directory) to the screenshot of the application",
+        type: "input",
+        when: ({ includeScreenshot }) => {
+            if (includeScreenshot) {
+                return true;
+            } 
+            else {
+                return false;
+            }
+        },
+        validate: screenshotInput => {
+            if (screenshotInput) {
+                return true;
+            } else {
+                console.log('You must enter a pathway');
+                return false;
+            }
+        }
+    },
     // Asking if you would like to include the repository URL
     {
         name: "includeRepository",

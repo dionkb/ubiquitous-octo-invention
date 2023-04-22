@@ -91,8 +91,8 @@ function generateMarkdown(data) {
 
   ${data.fullDescription}
 
-  Screenshot of final output:  
-  (***Don't forget to add me!***)
+  Screenshot or GIF of final output:  
+  ![screenshot or gif](./${data.screenshotPath})
 
   ## Table of Contents
   * [Dependencies](#dependencies)
