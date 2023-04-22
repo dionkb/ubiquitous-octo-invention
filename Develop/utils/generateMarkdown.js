@@ -70,7 +70,14 @@ function renderLicenseLink(license) {
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  switch(license) {
+    case "none":
+      return "";
+    case license:
+      return license + `: For more information, `
+    }
+}
 
 // // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -126,11 +133,11 @@ function generateMarkdown(data) {
   ### Contributing
   To help contribute to the project, reach out to me on Github.  
   There, you can report an issue if you encounter one.  
-  GitHub profile: github.com/${data.githubUser}
+  GitHub profile: <a href="https://github.com/${data.githubUser}">Click Here</a>
 
   ### License  
-  For detailed information, ${renderLicenseLink(data.license)}.  
-  See also: LICENSE.md file located within directory 
+  ${renderLicenseSection(data.license)} ${renderLicenseLink(data.license)}  
+  See also: LICENSE.md file located within directory (if applicable) 
 
   ### Acknowledgements
   ${data.acknowledgements}
