@@ -1,10 +1,12 @@
-// TODO: Include packages needed for this application
+// Included packages needed for this application to run
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 
-// // TODO: Create an array of questions for user input
+// An array of questions for user input, which will feed the generateMarkdown.js
+// functions to produce a README using that information
 const questions = [
+    // Obtaining the project title
     {
         name: "title",
         message: "Enter project title:",
@@ -18,6 +20,7 @@ const questions = [
             }
         }
     },
+    // Obtaining a short sumamry of the application
     {
         name: "summary",
         message: "Enter a short summary:",
@@ -31,6 +34,7 @@ const questions = [
             }
         }
     },
+    // Obtaining an in-depth description that covers all of the app features
     {
         name: "fullDescription",
         message: "In-depth description of features:",
@@ -44,11 +48,13 @@ const questions = [
             }
         }
     },
+    // Asking if you would like to include the repository URL
     {
         name: "includeRepository",
         message: "Include space for repository url?",
         type: "confirm",
     },
+    // Obtaining the repository URL, if the includeRepository input = Y
     {
         name: "repositoryURL",
         message: "Provide the URL to the repository:",
@@ -70,6 +76,7 @@ const questions = [
             }
         }
     },
+    // Obtaining the dependencies used for the application
     {
         name: "listDependencies",
         message: "List any dependencies, separating each with a comma:",
@@ -84,6 +91,7 @@ const questions = [
             }
         }
     },
+    // Obtaining installation instructions
     {
         name: "installation",
         message: "Installation instructions:",
@@ -98,6 +106,7 @@ const questions = [
             }
         }
     },
+    // Obtaining execution instructions
     {
         name: "executionNotes",
         message: "Enter instructions on how to execute the application:",
@@ -112,11 +121,13 @@ const questions = [
             }
         }
     },
+    // Asking if the user wants to include a URL to the deployed app
     {
         name: "includeDeployedURL",
         message: "Include space for deployed application url?",
         type: "confirm",
     },
+    // Obtaining the deployed app URL, if includeDeplyedURL input = Y
     {
         name: "deployedAppURL",
         message: "Provide the URL to the deployed application:",
@@ -138,6 +149,7 @@ const questions = [
             }
         }
     },
+    // Obtaining the authors
     {
         name: "authors",
         message: "Provide the author(s), separating each author with a comma",
@@ -152,6 +164,7 @@ const questions = [
             }
         }
     },
+    // Obtaining the github username
     {
         name: "githubUser",
         message: "Provide your Github username",
@@ -166,6 +179,7 @@ const questions = [
             }
         }
     },
+    // Obtaining the authors email address
     {
         name: "email",
         message: "Provide your email address",
@@ -180,6 +194,7 @@ const questions = [
             }
         }
     },
+    // Obtaining the license choice
     {
         name: "license",
         message: "Choose a license to use:",
@@ -210,6 +225,7 @@ const questions = [
             }
         }
     },
+    // Obtaining any acknowledgements
     {
         name: "acknowledgements",
         message: "Acknowledgements:",
@@ -226,22 +242,23 @@ const questions = [
     },
 ];
 
-// // TODO: Create a function to write README file
+// This function writes a README file using the native NodeJS 'fs' package,
+// and the user input info after it is run through the generateMarkdown.js file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log('README succesfully created')
     );
 }
 
-// // TODO: Create a function to initialize app
+// This function initializes the inquirer when run
 function init() {
     return inquirer.prompt(questions);
 }
 
-// // Function call to initialize app
+// This function call the initialization function, and then uses the user input
+// by sending it through the generateMarkdown.js and writeToFile functions.
 init()
 .then(answers => {
-    console.log(answers);
     return generateMarkdown(answers);
 })
 .then(returnedMarkdown => {

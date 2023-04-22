@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which 
-// license is passed in. If there is no license, return an empty string
+// This function returns a license badge based on which license is passed in
+// If there is no license, it returns an empty string
 function renderLicenseBadge(license) {
   switch(license) {
     default:
@@ -33,8 +33,8 @@ function renderLicenseBadge(license) {
     }
 };
 
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
+// This function returns the license link for more information 
+// If there is no license, it returns an empty string
 function renderLicenseLink(license) {
   switch(license) {
     default:
@@ -68,8 +68,8 @@ function renderLicenseLink(license) {
     }
 }
 
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
+// This function returns the unique license section of README
+// If there is no license, it returns an empty string
 function renderLicenseSection(license) {
   switch(license) {
     case "none":
@@ -79,7 +79,8 @@ function renderLicenseSection(license) {
     }
 }
 
-// // TODO: Create a function to generate markdown for README
+// This function generates markdown for README using user input pulled from
+// the Inquirer prompts, and fills the respective sections
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -147,4 +148,6 @@ function generateMarkdown(data) {
   `
 }
 
+// This sets the generateMardown file as an export, so the index.js file
+// can import its data and use it
 module.exports = generateMarkdown;
