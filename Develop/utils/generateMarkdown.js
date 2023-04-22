@@ -124,7 +124,8 @@ function generateMarkdown(data) {
   For any questions, please reach out to me at ${data.email}
 
   ### Contributing
-  To help contribute to the project, reach out to me on Github, or open an issue there.  
+  To help contribute to the project, reach out to me on Github.  
+  There, you can report an issue if you encounter one.  
   GitHub profile: github.com/${data.githubUser}
 
   ### License  

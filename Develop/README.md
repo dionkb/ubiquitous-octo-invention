@@ -1,13 +1,14 @@
-# d
+# f
 
-  d
-  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+  f  
+  
 
   ## Description
 
-  d
+  s
 
-  Screenshot of final output: (***Don't forget to add me!***)
+  Screenshot of final output:  
+  (***Don't forget to add me!***)
 
   ## Table of Contents
   * [Dependencies](#dependencies)
@@ -19,44 +20,44 @@
   * [Acknowledgements](#acknowledgements)
   * [Tests](#tests)
 
-  Link to the repository (if needed)
+  Link to the repository (if needed):  
   undefined
 
   ## Getting Started
 
   ### Dependencies
-  d
+  N/A
 
   ### Installation
-  d
+  a
 
   ## Usage
 
   ### Executing Program
-  d
+  dg
   
-  Link to the deployed application (if applicable)
+  Link to the deployed application (if applicable):  
   undefined
 
   ## Additional Information
 
   ### Authors
-  d
+  df
 
   ### Questions
-  For any questions, please reach out to me at:
-  Email: d
+  For any questions, please reach out to me at sd
 
   ### Contributing
-  To help contribute to the project, reach out to me on Github, or open an issue there
-  GitHub profile: github.com/d
+  To help contribute to the project, reach out to me on Github.  
+  There, you can report an issue if you encounter one.  
+  GitHub profile: github.com/sd
 
   ### License  
-  For detailed information, <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">click here</a>.  
+  For detailed information, .  
   See also: LICENSE.md file located within directory 
 
   ### Acknowledgements
-  d
+  N/A
 
   ### Tests
   *************** FILL IN LATER! **************
