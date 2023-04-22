@@ -211,20 +211,6 @@ const questions = [
         }
     },
     {
-        name: "licenseDetails",
-        message: "Provide license details:",
-        type: "input",
-        default: "See the LICENSE.md file for details",
-        validate: licenseInput => {
-            if (licenseInput) {
-                return true;
-            } else {
-                console.log('You must enter license information');
-                return false;
-            }
-        }
-    },
-    {
         name: "acknowledgements",
         message: "Acknowledgements:",
         type: "input",

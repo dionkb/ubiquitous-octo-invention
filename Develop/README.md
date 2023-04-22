@@ -1,7 +1,7 @@
 # d
 
   d
-  [![License](https://img.shields.io/badge/License-EPL_2.0-red.svg)](https://opensource.org/licenses/EPL-2.0)
+  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
   ## Description
 
@@ -52,7 +52,8 @@
   GitHub profile: github.com/d
 
   ### License  
-  d
+  For detailed information, <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">click here</a>.  
+  See also: LICENSE.md file located within directory 
 
   ### Acknowledgements
   d
