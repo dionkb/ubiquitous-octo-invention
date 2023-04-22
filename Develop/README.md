@@ -7,8 +7,8 @@
 
   d
 
-  Screenshot of final output:  
-  (***Don't forget to add me!***)
+  Screenshot or GIF of final output:  
+  ![screenshot or gif](./.\assets\Screenshot.jpg)
 
   ## Table of Contents
   * [Dependencies](#dependencies)
@@ -21,23 +21,23 @@
   * [Tests](#tests)
 
   Link to the repository (if needed):  
-  undefined
+  8
 
   ## Getting Started
 
   ### Dependencies
-  d
+  N/A
 
   ### Installation
-  d
+  N/A
 
   ## Usage
 
   ### Executing Program
-  d
+  N/A
   
   Link to the deployed application (if applicable):  
-  undefined
+  8
 
   ## Additional Information
 
