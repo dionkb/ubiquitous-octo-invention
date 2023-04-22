@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   switch(license) {
     default:
-      return '';
+      return "";
     case "Apache License 2.0":
       return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
     case "GNU General Public License v3.0":
@@ -35,7 +35,38 @@ function renderLicenseBadge(license) {
 
 // // TODO: Create a function that returns the license link
 // // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  switch(license) {
+    default:
+      return "";
+    case "Apache License 2.0":
+      return `<a href="https://www.apache.org/licenses/LICENSE-2.0">click here</a>`
+    case "GNU General Public License v3.0":
+      return `<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">click here</a>`
+    case "MIT License":
+      return `<a href="https://opensource.org/license/mit/">click here</a>`
+    case "BSD 2-Clause 'Simplified' License":
+      return `<a href="https://opensource.org/license/bsd-2-clause/">click here</a>`
+    case "BSD 3-Clause 'New' or 'Revised' License":
+      return `<a href="https://choosealicense.com/licenses/bsd-3-clause/">click here</a>`
+    case "Boost Software License 1.0":
+      return `<a href="https://www.boost.org/LICENSE_1_0.txt">click here</a>`
+    case "Creative Commons Zero v1.0 Universal":
+      return `<a href="https://creativecommons.org/publicdomain/zero/1.0/">click here</a>`
+    case "Eclipse Public License 2.0":
+      return `<a href="https://www.eclipse.org/legal/epl-2.0/">click here</a>`
+    case "GNU Affero General Public License v3.0":
+      return `<a href="https://www.gnu.org/licenses/agpl-3.0.en.html">click here</a>`
+    case "GNU General Public License v2.0":
+      return `<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">click here</a>`
+    case "GNU Lesser General Public License v2.1":
+      return `<a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">click here</a>`
+    case "Mozilla Public License 2.0":
+      return `<a href="https://www.mozilla.org/en-US/MPL/2.0/">click here</a>`
+    case "The Unlicense":
+      return `<a href="https://unlicense.org/">click here</a>`
+    }
+}
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
@@ -45,14 +76,15 @@ function renderLicenseBadge(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${data.summary}
+  ${data.summary}  
   ${renderLicenseBadge(data.license)}
 
   ## Description
 
   ${data.fullDescription}
 
-  Screenshot of final output: (***Don't forget to add me!***)
+  Screenshot of final output:  
+  (***Don't forget to add me!***)
 
   ## Table of Contents
   * [Dependencies](#dependencies)
@@ -64,7 +96,7 @@ function generateMarkdown(data) {
   * [Acknowledgements](#acknowledgements)
   * [Tests](#tests)
 
-  Link to the repository (if needed)
+  Link to the repository (if needed):  
   ${data.repositoryURL}
 
   ## Getting Started
@@ -80,7 +112,7 @@ function generateMarkdown(data) {
   ### Executing Program
   ${data.executionNotes}
   
-  Link to the deployed application (if applicable)
+  Link to the deployed application (if applicable):  
   ${data.deployedAppURL}
 
   ## Additional Information
@@ -89,15 +121,15 @@ function generateMarkdown(data) {
   ${data.authors}
 
   ### Questions
-  For any questions, please reach out to me at:
-  Email: ${data.email}
+  For any questions, please reach out to me at ${data.email}
 
   ### Contributing
-  To help contribute to the project, reach out to me on Github, or open an issue there
+  To help contribute to the project, reach out to me on Github, or open an issue there.  
   GitHub profile: github.com/${data.githubUser}
 
   ### License  
-  ${data.licenseDetails}
+  For detailed information, ${renderLicenseLink(data.license)}.  
+  See also: LICENSE.md file located within directory 
 
   ### Acknowledgements
   ${data.acknowledgements}
