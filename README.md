@@ -1,14 +1,16 @@
-# Dions Project
+# Week 9 - NodeJS Final Challenge
 
-  A README Generator  
+  This is a README generator using NodeJS Inquirer  
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  No thanks
+  The user can run this app in the terminal by using "node index.js" in the repository. The user will answer a series of prompts that will then be used to populate a README file that is newly generated. There are several questions that alllow the user to customize the README based on their needs.
 
   Screenshot or GIF of final output:  
-  ![screenshot or gif](./assets\Screenshot.jpg)
+  ![screenshot or gif](./assets/NodeJS%20-%20Week%209%20-%20Final%20Challenge.gif)  
+  Link to download a video walkthrough of the application:  
+  https://github.com/dionkb/ubiquitous-octo-invention/blob/main/assets/NodeJS%20-%20Week%209%20-%20Final%20Challenge.mp4
 
   ## Table of Contents
   * [Dependencies](#dependencies)
@@ -21,12 +23,12 @@
   * [Tests](#tests)
 
   Link to the repository (if needed):  
-  N/A
+  https://github.com/dionkb/ubiquitous-octo-invention.git
 
   ## Getting Started
 
   ### Dependencies
-  Inquirer
+  Inquirer 8.2.4
 
   ### Installation
   N/A
@@ -34,7 +36,7 @@
   ## Usage
 
   ### Executing Program
-  N/A
+  Use the terminal to run "node index.js" from the repo in order to begin the prompts
   
   Link to the deployed application (if applicable):  
   N/A
@@ -60,5 +62,5 @@
   N/A
 
   ### Tests
-  N/A
+  Use the terminal to run "node index.js" from the repo in order to begin the prompts
   
