@@ -30,6 +30,7 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   * [License](#license)
   * [Acknowledgements](#acknowledgements)
+  * [Tests](#tests)
 
   Link to the repository (if needed)
   ${data.repositoryURL}
@@ -68,6 +69,9 @@ function generateMarkdown(data) {
 
   ### Acknowledgements
   ${data.acknowledgements}
+
+  ### Tests
+  *************** FILL IN LATER! **************
   `
 }
 
