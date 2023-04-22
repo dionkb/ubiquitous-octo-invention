@@ -48,26 +48,13 @@ const questions = [
             }
         }
     },
-    // Asking if you would like to include a screenshot or gif of the application
-    {
-        name: "includeScreenshot",
-        message: "Include a screenshot or gif of the application?",
-        type: "confirm",
-    },
     // Obtaining a relative pathway to the screenshot/gif of the application
     // if the includeScreenshot input = Y
     {
         name: "screenshotPath",
         message: "Please provide the relative path (from the root of the directory) to the screenshot of the application",
         type: "input",
-        when: ({ includeScreenshot }) => {
-            if (includeScreenshot) {
-                return true;
-            } 
-            else {
-                return false;
-            }
-        },
+        default: "N/A",
         validate: screenshotInput => {
             if (screenshotInput) {
                 return true;
@@ -77,25 +64,12 @@ const questions = [
             }
         }
     },
-    // Asking if you would like to include the repository URL
-    {
-        name: "includeRepository",
-        message: "Include space for repository url?",
-        type: "confirm",
-    },
     // Obtaining the repository URL, if the includeRepository input = Y
     {
         name: "repositoryURL",
         message: "Provide the URL to the repository:",
         type: "input",
-        when: ({ includeRepository }) => {
-            if (includeRepository) {
-                return true;
-            } 
-            else {
-                return false;
-            }
-        },
+        default: "N/A",
         validate: repositoryURL => {
             if (repositoryURL) {
                 return true;
@@ -150,25 +124,12 @@ const questions = [
             }
         }
     },
-    // Asking if the user wants to include a URL to the deployed app
-    {
-        name: "includeDeployedURL",
-        message: "Include space for deployed application url?",
-        type: "confirm",
-    },
     // Obtaining the deployed app URL, if includeDeplyedURL input = Y
     {
         name: "deployedAppURL",
-        message: "Provide the URL to the deployed application:",
+        message: "Provide the URL to the deployed application (if needed):",
         type: "input",
-        when: ({ includeDeployedURL }) => {
-            if (includeDeployedURL) {
-                return true;
-            } 
-            else {
-                return false;
-            }
-        },
+        default: "N/A",
         validate: deployedAppURL => {
             if (deployedAppURL) {
                 return true;
@@ -265,6 +226,21 @@ const questions = [
                 return true;
             } else {
                 console.log('You must enter acknowledgements');
+                return false;
+            }
+        }
+    },
+    // Obtaining any testing information
+    {
+        name: "testing",
+        message: "Proivde any testing instructions",
+        type: "input",
+        default: "N/A",
+        validate: testInput => {
+            if (testInput) {
+                return true;
+            } else {
+                console.log('You must enter testing instructions');
                 return false;
             }
         }

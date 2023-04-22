@@ -144,7 +144,7 @@ function generateMarkdown(data) {
   ${data.acknowledgements}
 
   ### Tests
-  *************** FILL IN LATER! **************
+  ${data.testing}
   `
 }
 
