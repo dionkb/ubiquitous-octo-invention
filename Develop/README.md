@@ -1,11 +1,11 @@
-# f
+# d
 
-  f  
+  d  
   
 
   ## Description
 
-  s
+  d
 
   Screenshot of final output:  
   (***Don't forget to add me!***)
@@ -26,15 +26,15 @@
   ## Getting Started
 
   ### Dependencies
-  N/A
+  d
 
   ### Installation
-  a
+  d
 
   ## Usage
 
   ### Executing Program
-  dg
+  d
   
   Link to the deployed application (if applicable):  
   undefined
@@ -42,19 +42,19 @@
   ## Additional Information
 
   ### Authors
-  df
+  Dion Baskara
 
   ### Questions
-  For any questions, please reach out to me at sd
+  For any questions, please reach out to me at dionkbaskara@gmail.com
 
   ### Contributing
   To help contribute to the project, reach out to me on Github.  
   There, you can report an issue if you encounter one.  
-  GitHub profile: github.com/sd
+  GitHub profile: <a href="https://github.com/dionkb">Click Here</a>
 
   ### License  
-  For detailed information, .  
-  See also: LICENSE.md file located within directory 
+     
+  See also: LICENSE.md file located within directory (if applicable) 
 
   ### Acknowledgements
   N/A
