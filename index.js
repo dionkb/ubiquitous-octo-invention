@@ -267,5 +267,5 @@ init()
     return generateMarkdown(answers);
 })
 .then(returnedMarkdown => {
-    writeToFile("README.md", returnedMarkdown);
+    writeToFile("generatedREADME.md", returnedMarkdown);
 });
